@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-eqiv="X-UA-Compatible" content="IE=edge">
+        <title> Personal  portfolio </title>
+        <link rel="stylesheet" href="newstyle.css">
+        <script src="https://kit.fontawesome.com/4e1e44bcfb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="new.png" class="logo">
+            <ul>
+                
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>services</a></li>
+                <li><a href='#'>contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Content Manager</p>
+            <p>Content Writer</p>
+            <h1> Hello,I am Soha</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="hello.png">
+            </div>
+            <div class="about-col-2"> 
+                <h1 class='sub-title'>About me</h1>
+              <p>Passionate.Innovative.Hardworking <br> love to work in creative field of writing and management 
+           I enjoy writing on various topics like entertainment, creative news, celeb news,product description <br> I love to curate posts,manage different social media 
+           handles<br>Social media presence is must for brands to expand.<br> I can definitely help to reach their true potential through blog writing , social media presence
+           and much more.
+            </p> 
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')"> education</p> 
+            </div>
+            <div class="tab-contents active-tab" id="skills"> 
+                <ul>
+                    <li><span>content manger</span><br>social media posts</li>
+                    <br>
+                    <li><span>content writer</span><br>writing creative blogs</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education"> 
+                <ul>
+                    <li><span>class 12</span><br>95 percentage in CBSE Board</li>
+                    <br>
+                    <li><span>class 10</span><br>93 percentage in ICSE Board</li>
+                </ul>
+            </div>
+            </div>
+
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-instagram"></i>  
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <h2>social media</h2>
+                <p>engaging social media posts and handle management</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-typewriter"></i>
+                <i class="fa-solid fa-blog"></i>
+                <h2>content writing</h2>
+                <p>creative blog writing,news.</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="first.png">
+                <div class="layer">
+                    <h3>Social media posts</h3>
+                    <p>you can check my posts for bookworld and precious promotions
+                        and productions.
+                    </p>
+                    <a href="bookworld.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="precious.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="second.png">
+                <div class="layer">
+                    <h3>blog writing</h3>
+                    <p> you can check my contribution to buzzfeed through amazing quizzes
+                and poll game.
+                    </p>
+                    <a href="https://www.buzzfeed.com/sohaghodeswar"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="'contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class='sub-title'>Contact me</h1>
+                <p><i class="fa-regular fa-mailbox"></i>sohaghodeswar@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>8815251651</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100080663688696">facebook profile<i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <div class="contact-right">
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+        
+            
+<script>
+    var tablinks =document.getElementsByClassName('tab-links');
+    var tabcontents =document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+    
+</script>
+    </body>
+    </html>
